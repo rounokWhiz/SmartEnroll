@@ -70,7 +70,7 @@ Parents and Guardians – While not direct users, they may access the system to 
 		 </tr> 
 		 <tr> 
 			 <td>Frontend</td> 
-			 <td>React</td>   
+			 <td>PHP</td>   
 		 </tr> 
 		 <tr> 
 			 <td>Database</td> 
