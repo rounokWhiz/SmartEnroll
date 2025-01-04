@@ -59,8 +59,8 @@ Parents and Guardians – While not direct users, they may access the system to 
 <table>
 	 <thead> 
 		 <tr> 
-			 <th>Devlopment Tools</th> 
-			 <th>We Use</th> 
+			 <th>Devlopment</th> 
+			 <th>Tools</th> 
 		 </tr> 
 	 </thead> 
 	 <tbody> 
