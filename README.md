@@ -17,13 +17,13 @@ The student enrollment project is designed to streamline the registration proces
 	 <tbody> 
 		 <tr> 
 			 <td>20220104096</td> 
-			 <td>Rounok Rabbi (Rounok)</td> 
+			 <td>Rounok Rabbi</td> 
 			 <td>rounok107@gmail.com</td> 
 			 <td>Lead</td> 
 		 </tr> 
 		 <tr> 
 			 <td>20220104088</td> 
-			 <td>Ibrahim Emon</td> 
+			 <td>Ibrahim Hossain</td> 
 			 <td>ibrahimemon942@gmail.com</td> 
 			 <td>Backend + Frontend</td>   
 		 </tr> 
