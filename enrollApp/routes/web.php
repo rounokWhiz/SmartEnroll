@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('/backend', function () {
     return view('admin.admin_login');
 });
+
+//admin login
+// Route::post('/adminlogin', 'AdminController@login_dashboard');
+Route::post('/adminlogin', [AdminController::class, 'login_dashboard']);
