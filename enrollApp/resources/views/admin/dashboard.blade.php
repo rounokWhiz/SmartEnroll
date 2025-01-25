@@ -7,7 +7,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Salt Admin</title>
+  <title>SmartEnroll</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('node_modules/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css')}}">
@@ -116,7 +116,7 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper">
-        <a class="navbar-brand brand-logo" href="index.html"><img src="images/salt_logo.svg" alt="Logo"></a>
+        <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="images/salt_logo.svg" alt="Logo"></a> -->
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center">
         <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
@@ -234,7 +234,7 @@
               <img src="http://via.placeholder.com/47x47" alt="">
             </div>
             <div class="details">
-              <p class="user-name">Dave Mattew</p>
+              <p class="user-name">Saleheen</p>
               <p class="designation">Developer</p>
             </div>
           </div>
@@ -336,7 +336,7 @@
             <div class="col-sm-6 col-md-3 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <h2 class="card-title">Orders</h2>
+                  <h2 class="card-title">All Students</h2>
                 </div>
                 <div class="dashboard-chart-card-container">
                   <div id="dashboard-card-chart-1" class="card-float-chart"></div>
@@ -346,7 +346,7 @@
             <div class="col-sm-6 col-md-3 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <h2 class="card-title">Market Growth</h2>
+                  <h2 class="card-title">All Teacher</h2>
                 </div>
                 <div class="dashboard-chart-card-container">
                   <div id="dashboard-card-chart-2" class="card-float-chart"></div>
@@ -356,7 +356,7 @@
             <div class="col-sm-6 col-md-3 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <h2 class="card-title">Stock Price</h2>
+                  <h2 class="card-title">Tuition Fee</h2>
                 </div>
                 <div class="dashboard-chart-card-container">
                   <div id="dashboard-card-chart-3" class="card-float-chart"></div>
@@ -404,7 +404,7 @@
             <div class="col-lg-6 stock-price grid-margin d-flex align-items-stretch">
               <div class="card w-100">
                 <div class="card-body">
-                  <h2 class="card-title">Stock Price</h2>
+                  <h2 class="card-title">Tuition Fee</h2>
                   <div class="amount-column-wrapper wrapper">
                     <p class="total-performance">$ 9856</p>
                     <div class="row">
@@ -482,7 +482,7 @@
                           <img src="http://via.placeholder.com/47x47" alt="">
                           <span class="online-status bg-primary"></span>
                         </div>
-                        <div class="profile-name">Mexwell Peter</div>
+                        <div class="profile-name">Muhit</div>
                         <div class="current-progress ml-auto">450/900</div>
                       </div>
                       <div class="list py-2 d-flex flex-row align-items-center">
@@ -490,7 +490,7 @@
                           <img src="http://via.placeholder.com/47x47" alt="">
                           <span class="online-status bg-primary"></span>
                         </div>
-                        <div class="profile-name">Mexwell Peter</div>
+                        <div class="profile-name">Muhit</div>
                         <div class="current-progress ml-auto">450/900</div>
                       </div>
                       <div class="list py-2 d-flex flex-row align-items-center">
@@ -498,7 +498,7 @@
                           <img src="http://via.placeholder.com/47x47" alt="">
                           <span class="online-status bg-danger"></span>
                         </div>
-                        <div class="profile-name">Mexwell Peter</div>
+                        <div class="profile-name">Muhit</div>
                         <div class="current-progress ml-auto">450/900</div>
                       </div>
                       <div class="list py-2 d-flex flex-row align-items-center">
@@ -506,7 +506,7 @@
                           <img src="http://via.placeholder.com/47x47" alt="">
                           <span class="online-status bg-success"></span>
                         </div>
-                        <div class="profile-name">Mexwell Peter</div>
+                        <div class="profile-name">Muhit</div>
                         <div class="current-progress ml-auto">450/900</div>
                       </div>
                       <div class="list py-2 d-flex flex-row align-items-center">
@@ -514,7 +514,7 @@
                           <img src="http://via.placeholder.com/47x47" alt="">
                           <span class="online-status bg-warning"></span>
                         </div>
-                        <div class="profile-name">Mexwell Peter</div>
+                        <div class="profile-name">Muhit</div>
                         <div class="current-progress ml-auto">450/900</div>
                       </div>
                     </div>
@@ -529,8 +529,8 @@
                   <div class="task-cards selected">
                     <div class="wrapper d-flex flex-row align-items-center">
                       <div class="wrapper">
-                        <p class="title">Shiply Order</p>
-                        <p class="reference-url">URL<a href="#">goo.gl/tp.ttt</a></p>
+                        <p class="title">Course</p>
+                        <p class="reference-url">URL<a href="#">aust.edu</a></p>
                       </div>
                       <p class="ticket-number ml-auto">#1698</p>
                     </div>
@@ -550,8 +550,8 @@
                   <div class="task-cards">
                     <div class="wrapper d-flex flex-row align-items-center">
                       <div class="wrapper">
-                        <p class="title">Shiply Order</p>
-                        <p class="reference-url">URL<a href="#">goo.gl/tp.ttt</a></p>
+                        <p class="title">Course</p>
+                        <p class="reference-url">URL<a href="#">aust.edu</a></p>
                       </div>
                       <p class="ticket-number ml-auto">#1698</p>
                     </div>
@@ -571,8 +571,8 @@
                   <div class="task-cards">
                     <div class="wrapper d-flex flex-row align-items-center">
                       <div class="wrapper">
-                        <p class="title">Shiply Order</p>
-                        <p class="reference-url">URL<a href="#">goo.gl/tp.ttt</a></p>
+                        <p class="title">Course</p>
+                        <p class="reference-url">URL<a href="#">aust.edu</a></p>
                       </div>
                       <p class="ticket-number ml-auto">#1698</p>
                     </div>
@@ -614,8 +614,8 @@
                 <div class="col-12 global-card">
                   <div class="card bg-warning w-100">
                     <div class="card-body text-white d-flex flex-column align-items-center justify-content-center">
-                      <h2>Batchly is a global</h2>
-                      <p>We began with intensive and in-depth session to collate the needs of stakeholders</p>
+                      <h2>SmartEnroll</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, adipisci aliquid maxime voluptatum mollitia atque quod repellat ea alias cumque aliquam molestias doloremque excepturi ut aut cupiditate explicabo deleniti tenetur.</p>
                       <a href="#" class="btn btn-outline-secondary">View Details</a>
                     </div>
                   </div>
@@ -628,7 +628,7 @@
               <div class="card image-card w-100">
                 <div class="wrapper image-container">
                   <div class="wrapper controls d-flex align-items-center justify-content-between px-3">
-                    <p class="mb-0 text-white">Collection</p>
+                    <p class="mb-0 text-white">Students</p>
                     <a href="#" class="btn btn-rounded bg-primary btn-icon"><i class="mdi mdi-arrow-up text-white"></i></a>
                   </div>
                 </div>
@@ -685,7 +685,7 @@
                   <div class="wrapper d-flex align-items-center">
                     <img class="profile-img profile-img-lg" src="http://via.placeholder.com/47x47" alt="">
                     <div class="wrapper d-flex flex-column">
-                      <h3 class="mb-0 bold ml-4">Smijth John</h3>
+                      <h3 class="mb-0 bold ml-4">Rounok</h3>
                       <small class="ml-4 text-muted">Developer</small>
                     </div>
                   </div>
@@ -721,7 +721,7 @@
         <footer class="footer">
           <div class="container-fluid clearfix">
             <span class="float-right">
-                <a href="#">Salt Admin</a> &copy; 2017
+                <a href="#">SmartEnroll</a> &copy; 2017
             </span>
           </div>
         </footer>
