@@ -29,17 +29,14 @@
             <div class="card-body px-5 py-5">
               <h3 class="card-title text-left mb-3">Login</h3>
 
-              <p class="alert-danger"><?php
-              $exception=Session::get('exception');
+              <p class="alert-danger">
+                @if (session('exception'))
+                {{ session('exception') }}
+                @endif
+              </p>
 
-              if($exception){
-                echo $exception;
-                Session::put('exception',null);
-              }
-              
-              ?></p>
 
-              <form method ="post" action="{{ url('/adminlogin') }}">
+              <form method="post" action="{{ url('/adminlogin') }}">
                 {{ csrf_field() }}
 
                 <div class="form-group">
@@ -92,4 +89,5 @@
 
 
 <!-- Mirrored from www.urbanui.com/salt/jquery/pages/samples/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Dec 2017 12:33:56 GMT -->
+
 </html>
