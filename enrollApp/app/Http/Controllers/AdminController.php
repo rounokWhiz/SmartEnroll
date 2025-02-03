@@ -2,16 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-use Session;
+use Illuminate\Support\Facades\Session;
+
+session_start();
 
 class AdminController extends Controller
 {
     public function admin_dashboard(){
+      
         return view('admin.dashboard');
+    
     }
+
     public function login_dashboard(Request $request)
     {
         $email=$request->admin_email;
@@ -22,11 +27,13 @@ class AdminController extends Controller
         ->first();
 
         if($result){
+
             Session::put('admin_email',$result->admin_email);
             Session::put('admin_id',$result->admin_id);
             return Redirect::to('/admin_dashboard');
         }
         else{
+
             Session::put('exception','Email or Password Invalid');
             return Redirect::to('/backend');
         }
