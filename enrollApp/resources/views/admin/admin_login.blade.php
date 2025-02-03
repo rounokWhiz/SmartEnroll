@@ -6,7 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Salt Admin</title>
+  <title>SmartEnroll</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('node_modules/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css')}}">
@@ -29,16 +29,26 @@
             <div class="card-body px-5 py-5">
               <h3 class="card-title text-left mb-3">Login</h3>
 
+              <p class="alert-danger"><?php
+              $exception=Session::get('exception');
+
+              if($exception){
+                echo $exception;
+                Session::put('exception',null);
+              }
+              
+              ?></p>
+
               <form method ="post" action="{{ url('/adminlogin') }}">
                 {{ csrf_field() }}
 
                 <div class="form-group">
                   <label>Username or email *</label>
-                  <input type="text" class="form-control p_input">
+                  <input type="text" class="form-control p_input" name="admin_email" placeholder="email">
                 </div>
                 <div class="form-group">
                   <label>Password *</label>
-                  <input type="text" class="form-control p_input">
+                  <input type="text" class="form-control p_input" name="admin_password" placeholder="password">
                 </div>
                 <div class="form-group d-flex align-items-center justify-content-between">
                   <div class="icheck-square">
