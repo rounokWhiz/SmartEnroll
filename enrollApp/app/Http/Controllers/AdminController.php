@@ -14,6 +14,15 @@ class AdminController extends Controller
     public function admin_dashboard(){
       
         return view('admin.dashboard');
+
+    
+    }
+    //logout_part
+    public function logout()
+    {
+        Session::put('admin_name',null);
+        Session::put('admin_id',null);
+        return Redirect::to('/backend');
     
     }
 
