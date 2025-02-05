@@ -12,7 +12,9 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//logout
+//Route::get('/','AdminController@logout');
+Route::get('/logout', [AdminController::class, 'logout']);
 Route::get('/', function () {
     return view('student_login');
 });
