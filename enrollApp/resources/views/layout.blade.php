@@ -44,7 +44,7 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper">
-                <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="images/salt_logo.svg" alt="Logo"></a> -->
+                <a class="navbar-brand brand-logo" href="{{URL::to('admin_dashboard')}}"><img src="images/SmartEnroll.svg" alt="Logo"></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center">
                 <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
@@ -130,7 +130,7 @@
                             <span class="nav-link">Main</span>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="{{ URL::to('/allstudent') }}">
+                        <a class="nav-link" href="{{ URL::to('/allstudent')}}">
                                 <i class="mdi mdi-gauge menu-icon"></i>
                                 <span class="menu-title">All Student</span>
                             </a>

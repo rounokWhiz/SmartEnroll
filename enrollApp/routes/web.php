@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AddstudentsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,9 +13,11 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 //logout
-//Route::get('/','AdminController@logout');
 Route::get('/logout', [AdminController::class, 'logout']);
+
+
 Route::get('/', function () {
     return view('student_login');
 });
@@ -22,7 +25,14 @@ Route::get('/backend', function () {
     return view('admin.admin_login');
 });
 
+// Route::get('/addstudent', function () {
+//     return "Route is working!";
+// });
+
+
 //admin login
-// Route::post('/adminlogin', 'AdminController@login_dashboard');
 Route::post('/adminlogin', [AdminController::class, 'login_dashboard']);
+//admin_dashboard
 Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
+//addStudent
+Route::get('/addstudent', [AddstudentsController::class, 'addstudent']);
