@@ -37,7 +37,7 @@
                 <a class="nav-link" id="close-button" href="#"><i class="mdi mdi-window-close"></i></a>
             </li>
         </ul>
-    
+
     </div>
     <!-- partial -->
     <div class="container-scroller">
@@ -120,7 +120,7 @@
                             <img src="http://via.placeholder.com/47x47" alt="">
                         </div>
                         <div class="details">
-                            <p class="user-name">Saleheen</p>
+                            <p class="user-name">Rounok</p>
                             <p class="designation">Developer</p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                             <span class="nav-link">Main</span>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="{{ URL::to('/allstudent')}}">
+                            <a class="nav-link" href="{{ URL::to('/allstudent')}}">
                                 <i class="mdi mdi-gauge menu-icon"></i>
                                 <span class="menu-title">All Student</span>
                             </a>
@@ -199,16 +199,7 @@
                             <div class="collapse" id="advancedSubmenu">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pages/forms/form-addons.html">Form addons</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/forms/form-picker.html">Form Picker</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/forms/bt-select-splitter.html">Splitter</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/forms/icheck.html">Icheck</a>
+                                        <a class="nav-link" href="{{URL::to('/allteacher')}}">All teacher</a>
                                     </li>
                                 </ul>
                             </div>

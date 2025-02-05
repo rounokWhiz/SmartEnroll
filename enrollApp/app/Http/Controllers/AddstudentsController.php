@@ -8,6 +8,6 @@ class AddstudentsController extends Controller
 {
     public function addstudent()
     {
-        return view('admin.addstudent'); // Temporary for testing
+        return view('admin.addstudent'); 
     }
 }
