@@ -38,6 +38,12 @@ Route::get('/backend', function () {
 Route::post('/adminlogin', [AdminController::class, 'login_dashboard']);
 //admin_dashboard
 Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
+//viewProfile
+Route::get('/viewprofile', [AdminController::class, 'viewprofile']);
+//setting
+Route::get('/setting', [AdminController::class, 'setting']);
+
+
 //addStudent
 Route::get('/addstudent', [AddstudentsController::class, 'addstudent']);
 

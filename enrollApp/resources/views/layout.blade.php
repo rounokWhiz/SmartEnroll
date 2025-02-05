@@ -76,7 +76,7 @@
                             <span class="count bg-danger">4</span>
                         </a>
                         <div class="dropdown-menu navbar-dropdown mail-notification" aria-labelledby="MailDropdown">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="{{URL::to('/viewprofile')}}">
                                 <div class="sender-img">
                                     <img src="http://via.placeholder.com/47x47" alt="">
                                 </div>
@@ -84,7 +84,7 @@
                                     <p class="Sende-name">View Profile</p>
                                 </div>
                             </a>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="{{URL::to('/setting')}}">
                                 <div class="sender-img">
                                     <img src="http://via.placeholder.com/47x47" alt="">
 

@@ -11,10 +11,21 @@ session_start();
 
 class AdminController extends Controller
 {
+    //admin dashboard
     public function admin_dashboard()
     {
 
         return view('admin.dashboard');
+    }
+    //viewProfile
+    public function viewprofile()
+    {
+        return view('admin.view');
+    }
+    //setting
+    public function setting()
+    {
+        return view('admin.setting');
     }
 
     //logout_part
