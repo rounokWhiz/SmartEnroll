@@ -25,9 +25,21 @@
                     <td>{{$v_student->student_roll}}</td>
                     <td>{{$v_student->student_name}}</td>
                     <td>{{$v_student->student_phone}}</td>
-                    <td>New York</td>
+                    <td><img src="{{URL::to($v_student->student_image)}}" height="80" width="100" style="border-radius: 50%;"></td>
                     <td>{{$v_student->student_address}}</td>
-                    <td>{{$v_student->student_department}}</td>
+                    <td>
+                      @if($v_student->student_department==1)
+                         <span  class="label label-success">{{'CSE'}}</span>
+                      @elseif($v_student->student_department==2)
+                         <span  class="label label-primary">{{'BBA'}}</span>
+                      @elseif($v_student->student_department==3)
+                         <span  class="label label-warning">{{'EEE'}}</span>
+                      @elseif($v_student->student_department==4)
+                         <span  class="label label-info">{{'ECE'}}</span>
+                      @else
+                         <span  class="label label-important">{{'Not defined'}}</span> 
+                      @endif
+                    </td>
                     <td>
                       <button class="btn btn-outline-primary">View</button>
                       <button class="btn btn-outline-warning">Edit</button>
