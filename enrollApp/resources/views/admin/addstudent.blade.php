@@ -6,12 +6,19 @@
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">Add Student</h2>
-            <form class="forms-sample" method="post" action="{{URL::to('/add_student')}}" enctype="multipart/form-data">
+
+            <p class="alert-danger">
+                @if (session('exception'))
+                {{ session('exception') }}
+                @endif
+            </p>
+
+            <form class="forms-sample" method="post" action="{{URL::to('/savestudent')}}" enctype="multipart/form-data">
                 {{ csrf_field() }}
-                
+
                 <div class="form-group">
                     <label for="exampleInputEmail1">Student Name</label>
-                    <input type="text" class="form-control p-input" name="student_name" aria-describedby="emailHelp" placeholder="Enter Student Name">    
+                    <input type="text" class="form-control p-input" name="student_name" aria-describedby="emailHelp" placeholder="Enter Student Name">
                 </div>
 
                 <div class="form-group">
@@ -48,8 +55,8 @@
                     <label for="exampleInputPassword1">Student Password</label>
                     <input type="password" class="form-control p-input" name="student_password" placeholder="Enter Student Password">
                 </div>
-    
-                
+
+
                 <div class="form-group">
                     <label>Upload file</label>
                     <div class="row">

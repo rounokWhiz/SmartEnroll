@@ -46,7 +46,8 @@ Route::get('/setting', [AdminController::class, 'setting']);
 
 //addStudent
 Route::get('/addstudent', [AddstudentsController::class, 'addstudent']);
-
+//saveStudent
+Route::post('/savestudent', [AddstudentsController::class, 'savestudent']);
 
 Route::get('/allstudent', [AllstudentsController::class, 'allstudent']);
 Route::get('/tutionfee', [TutionController::class, 'tutionfee']);
