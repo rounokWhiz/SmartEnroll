@@ -20,7 +20,7 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach ($cse_student_info as $v_student)
+                @foreach ($mechanical_student_info as $v_student)
                 <tr>
                     <td>{{$v_student->student_roll}}</td>
                     <td>{{$v_student->student_name}}</td>
