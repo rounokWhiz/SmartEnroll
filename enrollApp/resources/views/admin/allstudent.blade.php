@@ -43,7 +43,8 @@
                     <td>
                       <button class="btn btn-outline-primary">View</button>
                       <button class="btn btn-outline-warning">Edit</button>
-                      <button class="btn btn-outline-danger">Delete</button>
+                      <a href="{{ url('/student_delete/'.$v_student->student_id) }} "id='delete' class="btn btn-danger">Delete</a>
+
                     </td>
                 </tr>
                 @endforeach

@@ -49,10 +49,10 @@ class AddstudentsController extends Controller
             }
         }
 
-        $data['image'] = $image_url;
-        DB::table('student_tbl')->insert($data);
-        Session::put('message', 'Student added successfully!');
-        return Redirect::to('/addstudent');
+    //    $data['image'] = $image_url;
+      //  DB::table('student_tbl')->insert($data);
+       // Session::put('message', 'Student added successfully!');
+      //  return Redirect::to('/addstudent');
 
         DB::table('student_tbl')->insert($data);
         Session::put('exception', 'Student added successfully!');

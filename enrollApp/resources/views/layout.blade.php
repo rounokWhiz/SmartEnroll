@@ -259,7 +259,22 @@
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script src="{{asset('js/dashboard_1.js')}}"></script>
+    <script type="text/javascript"src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js')}}"></script>
     <!-- End custom js for this page-->
+    <script>
+    $(document).on("click", "#delete", function(e) {
+        e.preventDefault(); 
+
+        var link = $(this).attr("href"); 
+
+        bootbox.confirm("Do you want to delete?", function(confirmed) {
+            if (confirmed) {
+                window.location.href = link;
+            }
+        });
+    });
+</script>
+
 </body>
 
 
