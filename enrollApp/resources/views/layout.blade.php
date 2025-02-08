@@ -37,14 +37,14 @@
                 <a class="nav-link" id="close-button" href="#"><i class="mdi mdi-window-close"></i></a>
             </li>
         </ul>
-    
+
     </div>
     <!-- partial -->
     <div class="container-scroller">
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper">
-                <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="images/salt_logo.svg" alt="Logo"></a> -->
+                <a class="navbar-brand brand-logo" href="{{URL::to('admin_dashboard')}}"><img src="images/SmartEnroll.svg" alt="Logo"></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center">
                 <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
@@ -76,7 +76,7 @@
                             <span class="count bg-danger">4</span>
                         </a>
                         <div class="dropdown-menu navbar-dropdown mail-notification" aria-labelledby="MailDropdown">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="{{URL::to('/viewprofile')}}">
                                 <div class="sender-img">
                                     <img src="http://via.placeholder.com/47x47" alt="">
                                 </div>
@@ -84,7 +84,7 @@
                                     <p class="Sende-name">View Profile</p>
                                 </div>
                             </a>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="{{URL::to('/setting')}}">
                                 <div class="sender-img">
                                     <img src="http://via.placeholder.com/47x47" alt="">
 
@@ -120,7 +120,7 @@
                             <img src="http://via.placeholder.com/47x47" alt="">
                         </div>
                         <div class="details">
-                            <p class="user-name">Saleheen</p>
+                            <p class="user-name">Rounok</p>
                             <p class="designation">Developer</p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                             <span class="nav-link">Main</span>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="{{ URL::to('/allstudent') }}">
+                            <a class="nav-link" href="{{ URL::to('/allstudent')}}">
                                 <i class="mdi mdi-gauge menu-icon"></i>
                                 <span class="menu-title">All Student</span>
                             </a>
@@ -199,16 +199,7 @@
                             <div class="collapse" id="advancedSubmenu">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pages/forms/form-addons.html">Form addons</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/forms/form-picker.html">Form Picker</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/forms/bt-select-splitter.html">Splitter</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/forms/icheck.html">Icheck</a>
+                                        <a class="nav-link" href="{{URL::to('/allteacher')}}">All teacher</a>
                                     </li>
                                 </ul>
                             </div>
@@ -257,6 +248,9 @@
     <script src="{{asset('node_modules/chart.js/dist/Chart.min.js')}}"></script>
     <script src="{{asset('node_modules/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
     <!-- End plugin js for this page-->
+    <script src="{{asset('node_modules/datatables.net/js/jquery.dataTables.js')}}"></script>
+    <script src="{{asset('node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js')}}"></script>
+    <script src="{{asset('js/data-table.js')}}"></script>
     <!-- inject:js -->
     <script src="{{asset('js/off-canvas.js')}}"></script>
     <script src="{{asset('js/hoverable-collapse.js')}}"></script>

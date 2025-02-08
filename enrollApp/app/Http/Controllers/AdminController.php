@@ -11,39 +11,49 @@ session_start();
 
 class AdminController extends Controller
 {
-    public function admin_dashboard(){
-      
-        return view('admin.dashboard');
+    //admin dashboard
+    public function admin_dashboard()
+    {
 
-    
+        return view('admin.dashboard');
     }
+    //viewProfile
+    public function viewprofile()
+    {
+        return view('admin.view');
+    }
+    //setting
+    public function setting()
+    {
+        return view('admin.setting');
+    }
+
     //logout_part
     public function logout()
     {
-        Session::put('admin_name',null);
-        Session::put('admin_id',null);
+        Session::put('admin_name', null);
+        Session::put('admin_id', null);
         return Redirect::to('/backend');
-    
     }
 
+    //dashboard for admin
     public function login_dashboard(Request $request)
     {
-        $email=$request->admin_email;
-        $password=md5($request->admin_password);
-        $result=DB::table('admin_tbl')
-        ->where('admin_email',$email)
-        ->where('admin_password',$password)
-        ->first();
+        $email = $request->admin_email;
+        $password = md5($request->admin_password);
+        $result = DB::table('admin_tbl')
+            ->where('admin_email', $email)
+            ->where('admin_password', $password)
+            ->first();
 
-        if($result){
+        if ($result) {
 
-            Session::put('admin_email',$result->admin_email);
-            Session::put('admin_id',$result->admin_id);
+            Session::put('admin_email', $result->admin_email);
+            Session::put('admin_id', $result->admin_id);
             return Redirect::to('/admin_dashboard');
-        }
-        else{
+        } else {
 
-            Session::put('exception','Email or Password Invalid');
+            Session::put('exception', 'Email or Password Invalid');
             return Redirect::to('/backend');
         }
     }
