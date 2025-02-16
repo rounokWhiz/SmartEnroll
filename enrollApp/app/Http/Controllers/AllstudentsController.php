@@ -35,7 +35,12 @@ class AllstudentsController extends Controller
     }
     //student information view
 
-    public function studentview(){
-        return view('admin.studentview');
+    public function studentview($student_id){
+        $student_description_view=DB::table('student_tbl')
+        ->select('*')
+        ->where('student_id',$student_id)
+        ->first();
     }
+
+   
 }
