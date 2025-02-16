@@ -25,11 +25,17 @@ class AllstudentsController extends Controller
         ->with('allstudent',$manage_student);
 
     }
+    //student delete method
     public function studentdelete($student_id){
         DB::table('student_tbl')
         ->where('student_id',$student_id)
         ->delete();
 
         return Redirect::to('/allstudent'); 
+    }
+    //student information view
+
+    public function studentview(){
+        return view('admin.studentview');
     }
 }
