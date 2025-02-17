@@ -40,7 +40,13 @@ class AllstudentsController extends Controller
         ->select('*')
         ->where('student_id',$student_id)
         ->first();
+
+        $manage_description_student=view('admin.view')
+        ->with('student_description_profile',$student_description_view);
+        return view('layout')
+        ->with('view',$manage_description_student);
     }
 
-   
+
+    
 }
