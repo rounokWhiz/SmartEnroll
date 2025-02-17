@@ -77,10 +77,9 @@
                     <label for="exampleInputPassword1">Student Department</label>
                     <select class="form-control p-input" name="student_department">
                         <option value="1">CSE</option>
-                        <option value="2">EEE</option>
-                        <option value="3">CIVIL</option>
-                        <option value="4">MECHANICAL</option>
-                        <option value="5">BBA</option>
+                        <option value="2">BBA</option>
+                        <option value="3">EEE</option>
+                        <option value="4">ECE</option>
                     </select>
                 </div>
 
