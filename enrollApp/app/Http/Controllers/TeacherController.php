@@ -10,4 +10,9 @@ class TeacherController extends Controller
     {
         return view('admin.allteacher');
     }
+
+    public function addteacher()
+    {
+        return view('admin.add_teacher');
+    }
 }

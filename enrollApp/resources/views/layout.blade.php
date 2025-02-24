@@ -199,6 +199,7 @@
                             <div class="collapse" id="advancedSubmenu">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
+                                        <a class="nav-link" href="{{URL::to('/addteacher')}}">Add teacher</a>
                                         <a class="nav-link" href="{{URL::to('/allteacher')}}">All teacher</a>
                                     </li>
                                 </ul>
