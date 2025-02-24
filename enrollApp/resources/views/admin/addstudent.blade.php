@@ -7,11 +7,11 @@
         <div class="card-body">
             <h2 class="card-title">Add Student</h2>
 
-            <p class="alert-success">
-                @if (session('exception'))
-                {{ session('exception') }}
-                @endif
-            </p>
+            @if (session('exception'))
+            <p class="alert-success">{{ session('exception') }}</p>
+            {{ Session::forget('exception') }}
+            @endif
+
 
             <form class="forms-sample" method="post" action="{{URL::to('/savestudent')}}" enctype="multipart/form-data">
                 {{ csrf_field() }}
