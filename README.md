@@ -82,6 +82,46 @@ Parents and Guardians – While not direct users, they may access the system to 
 		 </tr> 
 	 </tbody> 
  </table>
+
+## Milestones
+<table>
+	<thead> 
+		<tr> 
+			<th>Checkpoints</th> 
+			<th>Milestone</th> 
+			<th>Deadline</th> 
+			<th>Status</th> 
+		</tr> 
+	</thead> 
+	<tbody> 
+		<tr> 
+			<td>1</td> 
+			<td>Project Initialization</td> 
+			<td>2025-02-09</td> 
+			<td>Completed</td> 
+		</tr> 
+		<tr> 
+			<td>2</td> 
+			<td>Student Features</td> 
+			<td>2025-02-26</td> 
+			<td>Completed</td> 
+		</tr> 
+		<tr> 
+			<td>3</td> 
+			<td> Student & Teachers Features</td> 
+			<td>2025-03-02</td> 
+			<td>In Progress</td> 
+		</tr> 
+		<tr> 
+			<td>4</td> 
+			<td>Testing & Deployment</td> 
+			<td>2025-03-09</td> 
+			<td>Not Started</td> 
+		</tr> 
+	</tbody> 
+</table>
+
+
   
 ## UI Design
 Figma : <a href="https://www.figma.com/proto/PO3pBLh4R4klpQp5i56Pvr/Student-Enrollment?node-id=0-1&t=hzPTZrTuRyIhvfDr-1">Figma Prototype</a>
