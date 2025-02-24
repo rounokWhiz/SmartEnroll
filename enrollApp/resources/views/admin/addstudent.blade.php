@@ -7,7 +7,7 @@
         <div class="card-body">
             <h2 class="card-title">Add Student</h2>
 
-            <p class="alert-danger">
+            <p class="alert-success">
                 @if (session('exception'))
                 {{ session('exception') }}
                 @endif

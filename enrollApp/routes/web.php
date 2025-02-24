@@ -52,6 +52,8 @@ Route::post('/savestudent', [AddstudentsController::class, 'savestudent']);
 //Route::get('/student_delete/{student_id}', [AllstudentsController::class, 'studentdelete']);
 Route::get('/student_delete/{student_id}', [AllstudentsController::class, 'studentdelete']);
 Route::get('/student_view/{student_id}', [AllstudentsController::class, 'studentview']);
+Route::get('/student_edit/{student_id}', [AllstudentsController::class, 'studentedit']);
+Route::post('/update_student/{student_id}', [AllstudentsController::class, 'studentupdate']);
 
 
 

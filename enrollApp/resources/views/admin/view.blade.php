@@ -20,7 +20,7 @@
       <div class="card mb-4">
         <div class="card-body avatar">
           <h2 class="card-title">Info</h2>
-          <img src="http://via.placeholder.com/47x47" alt="">
+          <img src="{{URL::to($student_description_profile->student_image)}}" alt="">
           <p class="name">{{$student_description_profile->student_name}}</p>
           <p class="designation">-  {{$student_description_profile->student_roll}}  -</p>
           <a class="email" href="#">{{$student_description_profile->student_email}}</a>

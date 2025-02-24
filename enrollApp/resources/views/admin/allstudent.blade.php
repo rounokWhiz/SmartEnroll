@@ -5,6 +5,13 @@
     <div class="card">
       <div class="card-body">
         <h2 class="card-title">Data table</h2>
+
+        <p class="alert-success">
+                @if (session('exception'))
+                {{ session('exception') }}
+                @endif
+        </p>
+        
         <div class="row">
           <div class="col-12">
             <table id="order-listing" class="table table-striped" style="width:100%;">
@@ -42,7 +49,9 @@
                     </td>
                     <td>
                       <a href="{{URL::to('/student_view/'.$v_student->student_id)}}"><button class="btn btn-outline-primary">View</button></a>
-                      <button class="btn btn-outline-warning">Edit</button>
+                     
+                     <a href="{{URL::to('/student_edit/'.$v_student->student_id)}}"> <button class="btn btn-outline-warning">Edit</button> </a>
+                     
                       <a href="{{ url('/student_delete/'.$v_student->student_id) }} "id='delete' class="btn btn-danger">Delete</a>
 
                     </td>
