@@ -27,37 +27,37 @@
                 </tr>
               </thead>
               <tbody>
-                {{--@foreach ($all_student_info as $v_student)--}}
+                @foreach ($all_teacher_info as $v_teacher)
                 <tr>
-                    <td>{{--{{$v_student->student_roll}}--}}</td>
-                    <td>{{--{{$v_student->student_name}}--}}</td>
-                    <td>{{--{{$v_student->student_phone}}--}}</td>
-                    <td>{{--<img src="{{URL::to($v_student->student_image)}}"--}} height="80" width="100" style="border-radius: 50%;"></td>
+                    <td>{{$v_teacher->teachers_name}}</td>
+                    <td>{{$v_teacher->teachers_phone}}</td>
+                    <td>{{$v_teacher->teachers_address}}</td>
+                    <td><img src="{{URL::to($v_teacher->teachers_image)}}" height="80" width="100" style="border-radius: 50%;"></td>
                     <td>{{--{{$v_student->student_address}}--}}</td>
-                    <td>{{--
-                      @if($v_student->student_department==1)
+                    <td>
+                      @if($v_teacher->teachers_department==1)
                          <span  class="label label-success">{{'CSE'}}</span>
-                      @elseif($v_student->student_department==2)
+                      @elseif($v_teacher->teachers_department==2)
                          <span  class="label label-primary">{{'BBA'}}</span>
-                      @elseif($v_student->student_department==3)
+                      @elseif($v_teacher->teachers_department==3)
                          <span  class="label label-warning">{{'EEE'}}</span>
-                      @elseif($v_student->student_department==4)
+                      @elseif($v_teacher->teachers_department==4)
                          <span  class="label label-info">{{'ECE'}}</span>
                       @else
                          <span  class="label label-important">{{'Not defined'}}</span> 
                       @endif
-                      --}}
+                      
                     </td>
-                    <td>{{--
-                      <a href="{{URL::to('/student_view/'.$v_student->student_id)}}"><button class="btn btn-outline-primary">View</button></a>
+                    <td>
+                      <a href="{{URL::to('')}}"><button class="btn btn-outline-primary">View</button></a>
                      
-                     <a href="{{URL::to('/student_edit/'.$v_student->student_id)}}"> <button class="btn btn-outline-warning">Edit</button> </a>
+                     <a href="{{URL::to('')}}"> <button class="btn btn-outline-warning">Edit</button> </a>
                      
-                      <a href="{{ url('/student_delete/'.$v_student->student_id) }} "id='delete' class="btn btn-danger">Delete</a>
-                      --}}
+                      <a href="{{ url('') }} "id='delete' class="btn btn-danger">Delete</a>
+                      
                     </td>
                 </tr>
-                {{--@endforeach--}}
+                @endforeach
               </tbody>
             </table>
           </div>
