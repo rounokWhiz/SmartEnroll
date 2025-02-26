@@ -17,11 +17,10 @@
             <table id="order-listing" class="table table-striped" style="width:100%;">
               <thead>
                 <tr>
-                    <th>Student Roll</th>
-                    <th>Student Name</th>
+                    <th>Teacher Name</th>
                     <th>Phone</th>
-                    <th>Image</th>
                     <th>Address</th>
+                    <th>Image</th>
                     <th>Department</th>
                     <th>Action</th>
                 </tr>
@@ -33,7 +32,7 @@
                     <td>{{$v_teacher->teachers_phone}}</td>
                     <td>{{$v_teacher->teachers_address}}</td>
                     <td><img src="{{URL::to($v_teacher->teachers_image)}}" height="80" width="100" style="border-radius: 50%;"></td>
-                    <td>{{--{{$v_student->student_address}}--}}</td>
+                    
                     <td>
                       @if($v_teacher->teachers_department==1)
                          <span  class="label label-success">{{'CSE'}}</span>
@@ -48,13 +47,8 @@
                       @endif
                       
                     </td>
-                    <td>
-                      <a href="{{URL::to('')}}"><button class="btn btn-outline-primary">View</button></a>
-                     
-                     <a href="{{URL::to('')}}"> <button class="btn btn-outline-warning">Edit</button> </a>
-                     
+                    <td> 
                       <a href="{{ url('') }} "id='delete' class="btn btn-danger">Delete</a>
-                      
                     </td>
                 </tr>
                 @endforeach
