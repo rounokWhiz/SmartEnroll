@@ -12,7 +12,14 @@ class TeacherController extends Controller
 {
     public function allteacher()
     {
-        return view('admin.allteacher');
+        $allteacher_info = DB::table('teachers_tbl')
+            ->get();
+
+        $manage_teacher = view('admin.allteacher')
+            ->with('all_teacher_info', $allteacher_info);
+
+        return view('layout')
+            ->with('allteacher', $manage_teacher);
     }
 
     public function addteacher()
