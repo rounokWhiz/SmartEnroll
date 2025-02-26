@@ -49,10 +49,10 @@ Route::get('/addstudent', [AddstudentsController::class, 'addstudent']);
 //saveStudent
 Route::post('/savestudent', [AddstudentsController::class, 'savestudent']);
 //deleteStudent
-//Route::get('/student_delete/{student_id}', [AllstudentsController::class, 'studentdelete']);
 Route::get('/student_delete/{student_id}', [AllstudentsController::class, 'studentdelete']);
-
-
+Route::get('/student_view/{student_id}', [AllstudentsController::class, 'studentview']);
+Route::get('/student_edit/{student_id}', [AllstudentsController::class, 'studentedit']);
+Route::post('/update_student/{student_id}', [AllstudentsController::class, 'studentupdate']);
 
 
 
@@ -65,3 +65,5 @@ Route::get('/civil', [CIVILController::class, 'civil']);
 Route::get('/bba', [BBAController::class, 'bba']);
 Route::get('/mechanical', [MECHANICALControllerler::class, 'mechanical']);
 Route::get('/allteacher', [TeacherController::class, 'allteacher']);
+Route::get('/addteacher', [TeacherController::class, 'addteacher']);
+Route::post('/saveteacher', [TeacherController::class, 'saveteacher']);
