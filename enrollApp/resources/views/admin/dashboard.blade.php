@@ -5,6 +5,7 @@
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">All Students</h2>
+      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12</p>
     </div>
     <div class="dashboard-chart-card-container">
       <div id="dashboard-card-chart-1" class="card-float-chart"></div>
@@ -15,6 +16,7 @@
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">All Teachers</h2>
+      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12</p>
     </div>
     <div class="dashboard-chart-card-container">
       <div id="dashboard-card-chart-2" class="card-float-chart"></div>
@@ -25,6 +27,7 @@
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">Tuition Fee</h2>
+      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12</p>
     </div>
     <div class="dashboard-chart-card-container">
       <div id="dashboard-card-chart-3" class="card-float-chart"></div>
@@ -35,6 +38,7 @@
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">Revenue</h2>
+      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">Revenue</p>
     </div>
     <div class="dashboard-chart-card-container">
       <div id="dashboard-card-chart-4" class="card-float-chart"></div>
@@ -284,7 +288,7 @@
                 <div class="col-12 global-card">
                   <div class="card bg-warning w-100">
                     <div class="card-body text-white d-flex flex-column align-items-center justify-content-center">
-                      <h2>Batchly is a global</h2>
+                      <h2>Admission Going On</h2>
                       <p>We began with intensive and in-depth session to collate the needs of stakeholders</p>
                       <a href="#" class="btn btn-outline-secondary">View Details</a>
                     </div>
