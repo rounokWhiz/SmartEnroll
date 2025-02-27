@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('student_layout')
 
 @php
   function convert_department($value){
@@ -20,11 +20,11 @@
       <div class="card mb-4">
         <div class="card-body avatar">
           <h2 class="card-title">Info</h2>
-          <img src="{{URL::to($student_description_profile->student_image)}}" alt="">
-          <p class="name">{{$student_description_profile->student_name}}</p>
-          <p class="designation">-  {{$student_description_profile->student_roll}}  -</p>
-          <a class="email" href="#">{{$student_description_profile->student_email}}</a>
-          <a class="number" href="#">{{$student_description_profile->student_phone}}</a>
+          <img src="{{URL::to($student_profile->student_image)}}" alt="">
+          <p class="name">{{$student_profile->student_name}}</p>
+          <p class="designation">-  {{$student_profile->student_roll}}  -</p>
+          <a class="email" href="#">{{$student_profile->student_email}}</a>
+          <a class="number" href="#">{{$student_profile->student_phone}}</a>
         </div>
       </div>
       <div class="card mb-4">
@@ -41,23 +41,23 @@
           <div class="info-links">
             <a class="website">
               <i class="icon-globe icon">Fathers Name:</i>
-              <span style="font-family: vernada; font-size: 15px;">{{$student_description_profile->student_fathersname}}</span>
+              <span style="font-family: vernada; font-size: 15px;">{{$student_profile->student_fathersname}}</span>
             </a>
             <a class="website">
               <i class="icon-globe icon">Mothers Name:</i>
-              <span style="font-family: vernada; font-size: 15px;">{{$student_description_profile->student_mothersname}}</span>
+              <span style="font-family: vernada; font-size: 15px;">{{$student_profile->student_mothersname}}</span>
             </a>
             <a class="website">
               <i class="icon-globe icon">Address:</i>
-              <span style="font-family: vernada; font-size: 15px;">{{$student_description_profile->student_address}}</span>
+              <span style="font-family: vernada; font-size: 15px;">{{$student_profile->student_address}}</span>
             </a>
             <a class="website">
               <i class="icon-globe icon">Department:</i>
-              <span style="font-family: vernada; font-size: 15px;">{{convert_department($student_description_profile->student_department)}}</span>
+              <span style="font-family: vernada; font-size: 15px;">{{convert_department($student_profile->student_department)}}</span>
             </a>
             <a class="website">
               <i class="icon-globe icon">Admission Year:</i>
-              <span style="font-family: vernada; font-size: 15px;">{{$student_description_profile->student_admissionyear}}</span>
+              <span style="font-family: vernada; font-size: 15px;">{{$student_profile->student_admissionyear}}</span>
             </a>
           </div>
         </div>

@@ -17,6 +17,11 @@ class AdminController extends Controller
 
         return view('admin.dashboard');
     }
+    public function student_dashboard()
+    {
+
+        return view('student.dashboard');
+    }
     //viewProfile
     public function viewprofile()
     {
@@ -55,6 +60,27 @@ class AdminController extends Controller
 
             Session::put('exception', 'Email or Password Invalid');
             return Redirect::to('/backend');
+        }
+    }
+//studentlogindashboard
+    public function student_login_dashboard(Request $request)
+    {
+        $email = $request->student_email;
+        $password = md5($request->student_password);
+        $result = DB::table('student_tbl')
+            ->where('student_email', $email)
+            ->where('student_password', $password)
+            ->first();
+
+        if ($result) {
+
+            Session::put('student_email', $result->student_email);
+            Session::put('student_id', $result->student_id);
+            return Redirect::to('/student_dashboard');
+        } else {
+
+            Session::put('exception', 'Email or Password Invalid');
+            return Redirect::to('/');
         }
     }
 }
