@@ -36,13 +36,17 @@ Route::get('/backend', function () {
 
 //admin login
 Route::post('/adminlogin', [AdminController::class, 'login_dashboard']);
+Route::post('/studentlogin', [AdminController::class, 'student_login_dashboard']);
+
+Route::get('/student_dashboard', [AdminController::class, 'student_dashboard']);
+
 //admin_dashboard
 Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
 //viewProfile
 Route::get('/viewprofile', [AdminController::class, 'viewprofile']);
 //setting
 Route::get('/setting', [AdminController::class, 'setting']);
-
+Route::get('/student_profile', [AddstudentsController::class, 'studentprofile']);
 
 //addStudent
 Route::get('/addstudent', [AddstudentsController::class, 'addstudent']);
