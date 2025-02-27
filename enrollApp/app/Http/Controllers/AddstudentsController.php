@@ -61,8 +61,19 @@ class AddstudentsController extends Controller
         return Redirect::to('/addstudent');
     }
 
-    public function studentprofile()
-    {
-        return view('student.student_view');
-    }
+    public function studentprofile(){
+
+        $student_id = Session::get('student_id');
+        $student_profile = DB::table('student_tbl')
+            ->select('*')
+            ->where('student_id', $student_id)
+            ->first();
+        
+        $manage_student = view('student.student_view')
+            ->with('student_profile', $student_profile);
+        
+        return view('student_layout')
+            ->with('student_view', $manage_student);
+        }
+        
 }
