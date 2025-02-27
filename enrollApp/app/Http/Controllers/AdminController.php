@@ -17,6 +17,11 @@ class AdminController extends Controller
 
         return view('admin.dashboard');
     }
+    public function student_dashboard()
+    {
+
+        return view('student.dashboard');
+    }
     //viewProfile
     public function viewprofile()
     {
