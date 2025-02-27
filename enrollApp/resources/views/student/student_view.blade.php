@@ -21,7 +21,7 @@
         <div class="card-body avatar">
           <h2 class="card-title">Info</h2>
           <img src="{{URL::to($student_profile->student_image)}}" alt="">
-          <p class="name">{{$student_profile->student_name}}</p>
+          <p class="name">{{strtoupper($student_profile->student_name)}}</p>
           <p class="designation">-  {{$student_profile->student_roll}}  -</p>
           <a class="email" href="#">{{$student_profile->student_email}}</a>
           <a class="number" href="#">{{$student_profile->student_phone}}</a>

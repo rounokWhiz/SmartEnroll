@@ -32,6 +32,10 @@ class AdminController extends Controller
     {
         return view('admin.setting');
     }
+    public function studentsetting()
+    {
+        return view('student.student_setting');
+    }
 
     //logout_part
     public function logout()
@@ -39,6 +43,13 @@ class AdminController extends Controller
         Session::put('admin_name', null);
         Session::put('admin_id', null);
         return Redirect::to('/backend');
+    }
+
+    public function student_logout()
+    {
+        Session::put('student_name', null);
+        Session::put('student_id', null);
+        return Redirect::to('/');
     }
 
     //dashboard for admin
@@ -66,7 +77,7 @@ class AdminController extends Controller
     public function student_login_dashboard(Request $request)
     {
         $email = $request->student_email;
-        $password = md5($request->student_password);
+        $password = ($request->student_password);
         $result = DB::table('student_tbl')
             ->where('student_email', $email)
             ->where('student_password', $password)

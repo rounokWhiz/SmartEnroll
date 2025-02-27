@@ -25,6 +25,7 @@ use App\Http\Controllers\TutionController;
 
 //logout
 Route::get('/logout', [AdminController::class, 'logout']);
+Route::get('/student_logout', [AdminController::class, 'student_logout']);
 
 Route::get('/', function () {
     return view('student_login');
@@ -46,6 +47,7 @@ Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
 Route::get('/viewprofile', [AdminController::class, 'viewprofile']);
 //setting
 Route::get('/setting', [AdminController::class, 'setting']);
+Route::get('/student_setting', [AdminController::class, 'studentsetting']);
 Route::get('/student_profile', [AddstudentsController::class, 'studentprofile']);
 
 //addStudent
