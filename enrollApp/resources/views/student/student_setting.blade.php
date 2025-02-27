@@ -13,22 +13,22 @@
                 @endif
             </p>
 
-            <form class="forms-sample" method="post" action="">
+            <form class="forms-sample" method="post" action="{{URL::to('/student_own_update')}}">
                 {{ csrf_field() }}
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Student Phone</label>
-                    <input type="text" class="form-control p-input" name="student_phone" >
+                    <input type="text" class="form-control p-input" name="student_phone" value="{{($student_description_profile->student_phone)}}">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Student Address</label>
-                    <input type="text" class="form-control p-input" name="student_address" >
+                    <input type="text" class="form-control p-input" name="student_address" value="{{($student_description_profile->student_address)}}">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Student Password</label>
-                    <input type="password" class="form-control p-input" name="student_password" >
+                    <input type="password" class="form-control p-input" name="student_password" value="{{($student_description_profile->student_password)}}">
                 </div>
 
                 
