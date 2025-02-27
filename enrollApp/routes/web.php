@@ -46,7 +46,7 @@ Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
 Route::get('/viewprofile', [AdminController::class, 'viewprofile']);
 //setting
 Route::get('/setting', [AdminController::class, 'setting']);
-
+Route::get('/student_profile', [AddstudentsController::class, 'studentprofile']);
 
 //addStudent
 Route::get('/addstudent', [AddstudentsController::class, 'addstudent']);

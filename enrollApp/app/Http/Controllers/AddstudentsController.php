@@ -15,6 +15,8 @@ class AddstudentsController extends Controller
         return view('admin.addstudent');
     }
 
+    //student save part here
+
     public function savestudent(Request $request)
     {
         $data = [
@@ -57,5 +59,10 @@ class AddstudentsController extends Controller
         DB::table('student_tbl')->insert($data);
         Session::put('exception', 'Student added successfully!');
         return Redirect::to('/addstudent');
+    }
+
+    public function studentprofile()
+    {
+        return view('student.student_view');
     }
 }
