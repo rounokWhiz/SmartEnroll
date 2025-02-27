@@ -5,7 +5,11 @@
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">All Students</h2>
-      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12</p>
+      @php
+        $student=DB::table('student_tbl')
+        ->count('student_id');
+      @endphp
+      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">{{$student}}</p>
     </div>
     <div class="dashboard-chart-card-container">
       <div id="dashboard-card-chart-1" class="card-float-chart"></div>
@@ -16,7 +20,11 @@
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">All Teachers</h2>
-      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12</p>
+      @php
+        $teachers=DB::table('teachers_tbl')
+        ->count('teachers_id');
+      @endphp
+      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">{{$teachers}}</p>
     </div>
     <div class="dashboard-chart-card-container">
       <div id="dashboard-card-chart-2" class="card-float-chart"></div>
@@ -131,16 +139,16 @@
                 <div class="col-12 grid-margin d-flex align-items-stretch">
                   <div class="row">
                     <div class="col-12 col-sm-6 col-md-12 mb-3">
-                      <div class="social-panel bg-facebook"><i class="mdi mdi-facebook"></i><p class="mb-0">CSE</p></div>
+                      <div class="social-panel bg-facebook"></i><p class="mb-0">CSE</p></div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-12 mb-3">
-                      <div class="social-panel bg-twitter"><i class="mdi mdi-twitter"></i><p class="mb-0">EEE</p></div>
+                      <div class="social-panel bg-twitter"></i><p class="mb-0">EEE</p></div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-12 mb-3">
-                      <div class="social-panel bg-google"><i class="mdi mdi-google"></i><p class="mb-0">CIVIL</p></div>
+                      <div class="social-panel bg-google"></i><p class="mb-0">CIVIL</p></div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-12">
-                      <div class="social-panel bg-linkedin"><i class="mdi mdi-linkedin"></i><p class="mb-0">MECHANICAL</p></div>
+                      <div class="social-panel bg-linkedin"></i><p class="mb-0">MECHANICAL</p></div>
                     </div>
                   </div>
                 </div>
