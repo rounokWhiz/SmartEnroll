@@ -68,43 +68,7 @@
                         <input type="text" class="form-control">
                     </div>
                 </form>
-                <ul class="navbar-nav ml-lg-auto">
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
-                            <i class="mdi mdi-message-outline"></i>
-                            <span class="count bg-danger">4</span>
-                        </a>
-                        <div class="dropdown-menu navbar-dropdown mail-notification" aria-labelledby="MailDropdown">
-                            <a class="dropdown-item" href="{{URL::to('/viewprofile')}}">
-                                <div class="sender-img">
-                                    <img src="http://via.placeholder.com/47x47" alt="">
-                                </div>
-                                <div class="sender">
-                                    <p class="Sende-name">View Profile</p>
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="{{URL::to('/setting')}}">
-                                <div class="sender-img">
-                                    <img src="http://via.placeholder.com/47x47" alt="">
-
-                                </div>
-                                <div class="sender">
-                                    <p class="Sende-name">Settings</p>
-                                </div>
-                            </a>
-                            <a class="dropdown-item" href="{{URL::to('/logout')}}">
-                                <div class="sender-img">
-                                    <img src="http://via.placeholder.com/47x47" alt="">
-                                </div>
-                                <div class="sender">
-                                    <p class="Sende-name">Logout</p>
-                                </div>
-                            </a>
-
-                        </div>
-                    </li>
-                </ul>
+              
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -133,6 +97,18 @@
                             <a class="nav-link" href="{{ URL::to('/')}}">
                                 <i class="mdi mdi-gauge menu-icon"></i>
                                 <span class="menu-title">All Student</span>
+                            </a>
+                            <a class="nav-link" href="{{ URL::to('/')}}">
+                                <i class="mdi mdi-gauge menu-icon"></i>
+                                <span class="menu-title">Setting</span>
+                            </a>
+                            <a class="nav-link" href="{{ URL::to('/')}}">
+                                <i class="mdi mdi-gauge menu-icon"></i>
+                                <span class="menu-title">Profile</span>
+                            </a>
+                            <a class="nav-link" href="{{ URL::to('/')}}">
+                                <i class="mdi mdi-gauge menu-icon"></i>
+                                <span class="menu-title">Logout</span>
                             </a>
                         </li>
                       
