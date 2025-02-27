@@ -17,24 +17,39 @@ class AdminController extends Controller
 
         return view('admin.dashboard');
     }
+
+    // student_dashboard
     public function student_dashboard()
     {
 
         return view('student.dashboard');
     }
+
     //viewProfile
     public function viewprofile()
     {
         return view('admin.view');
     }
-    //setting
+
+    //admin_setting
     public function setting()
     {
         return view('admin.setting');
     }
+
+    //student_setting
     public function studentsetting()
     {
-        return view('student.student_setting');
+        $student_id = Session::get('student_id');
+        $student_description_view = DB::table('student_tbl')
+            ->select('*')
+            ->where('student_id', $student_id)
+            ->first();
+
+        $manage_description_student = view('student.student_setting')
+            ->with('student_description_profile', $student_description_view);
+        return view('student_layout')
+            ->with('student_setting', $manage_description_student);
     }
 
     //logout_part
@@ -45,6 +60,7 @@ class AdminController extends Controller
         return Redirect::to('/backend');
     }
 
+    //student_logout
     public function student_logout()
     {
         Session::put('student_name', null);
@@ -73,7 +89,8 @@ class AdminController extends Controller
             return Redirect::to('/backend');
         }
     }
-//studentlogindashboard
+
+    //student_login_dashboard
     public function student_login_dashboard(Request $request)
     {
         $email = $request->student_email;
