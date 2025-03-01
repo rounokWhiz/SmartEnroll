@@ -110,7 +110,7 @@ Parents and Guardians – While not direct users, they may access the system to 
 			<td>3</td> 
 			<td> Student & Teachers Features</td> 
 			<td>2025-03-02</td> 
-			<td>In Progress</td> 
+			<td>Completed</td> 
 		</tr> 
 		<tr> 
 			<td>4</td> 
