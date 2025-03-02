@@ -15,6 +15,8 @@ class AddstudentsController extends Controller
         return view('admin.addstudent');
     }
 
+    //student save part here
+
     public function savestudent(Request $request)
     {
         $data = [
@@ -49,13 +51,29 @@ class AddstudentsController extends Controller
             }
         }
 
-        $data['image'] = $image_url;
-        DB::table('student_tbl')->insert($data);
-        Session::put('message', 'Student added successfully!');
-        return Redirect::to('/addstudent');
+        //    $data['image'] = $image_url;
+        //  DB::table('student_tbl')->insert($data);
+        // Session::put('message', 'Student added successfully!');
+        //  return Redirect::to('/addstudent');
 
         DB::table('student_tbl')->insert($data);
         Session::put('exception', 'Student added successfully!');
         return Redirect::to('/addstudent');
     }
+
+    public function studentprofile(){
+
+        $student_id = Session::get('student_id');
+        $student_profile = DB::table('student_tbl')
+            ->select('*')
+            ->where('student_id', $student_id)
+            ->first();
+        
+        $manage_student = view('student.student_view')
+            ->with('student_profile', $student_profile);
+        
+        return view('student_layout')
+            ->with('student_view', $manage_student);
+        }
+        
 }

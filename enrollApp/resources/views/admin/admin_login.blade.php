@@ -29,11 +29,11 @@
             <div class="card-body px-5 py-5">
               <h3 class="card-title text-left mb-3">Login</h3>
 
-              <p class="alert-danger">
-                @if (session('exception'))
-                {{ session('exception') }}
-                @endif
-              </p>
+              @if (session('exception'))
+              <p class="alert-success">{{ session('exception') }}</p>
+              {{ Session::forget('exception') }}
+              @endif
+
 
 
               <form method="post" action="{{ url('/adminlogin') }}">

@@ -17,7 +17,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="{{asset('css/style.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('images/favicon.html')}}" />
+  <link rel="shortcut icon" href="{{URL::to('images/favicon.html')}}" />
 </head>
 
 <body class="sidebar-dark">
@@ -28,14 +28,24 @@
           <div class="card col-lg-4 mx-auto">
             <div class="card-body px-5 py-5">
               <h3 class="card-title text-left mb-3">Login</h3>
-              <form>
+
+              @if (session('exception'))
+              <p class="alert-success">{{ session('exception') }}</p>
+              {{ Session::forget('exception') }}
+              @endif
+
+
+
+              <form method="post" action="{{ url('/studentlogin') }}">
+                {{ csrf_field() }}
+
                 <div class="form-group">
                   <label>Username or email *</label>
-                  <input type="text" class="form-control p_input">
+                  <input type="text" class="form-control p_input" name="student_email" placeholder="email">
                 </div>
                 <div class="form-group">
                   <label>Password *</label>
-                  <input type="text" class="form-control p_input">
+                  <input type="text" class="form-control p_input" name="student_password" placeholder="password">
                 </div>
                 <div class="form-group d-flex align-items-center justify-content-between">
                   <div class="icheck-square">
@@ -79,4 +89,5 @@
 
 
 <!-- Mirrored from www.urbanui.com/salt/jquery/pages/samples/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Dec 2017 12:33:56 GMT -->
+
 </html>
