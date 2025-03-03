@@ -8,6 +8,7 @@ use App\Http\Controllers\BBAController;
 use App\Http\Controllers\CIVILController;
 use App\Http\Controllers\CSEController;
 use App\Http\Controllers\EEEController;
+use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\MECHANICALControllerler;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\TutionController;
@@ -44,7 +45,7 @@ Route::post('/studentlogin', [AdminController::class, 'student_login_dashboard']
 //admin_dashboard
 Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
 //student_dashboard
-Route::get('/student_dashboard', [AdminController::class, 'student_dashboard']);
+Route::get('/student_dashboard', [AdminController::class, 'student_dashboard'])->name('student.dashboard');
 
 //viewProfile
 Route::get('/viewprofile', [AdminController::class, 'viewprofile']);
@@ -81,3 +82,8 @@ Route::get('/mechanical', [MECHANICALControllerler::class, 'mechanical']);
 Route::get('/allteacher', [TeacherController::class, 'allteacher']);
 Route::get('/addteacher', [TeacherController::class, 'addteacher']);
 Route::post('/saveteacher', [TeacherController::class, 'saveteacher']);
+
+
+//enroll table
+Route::get('/enroll', [EnrollmentController::class, 'index'])->name('enroll');
+Route::post('/enroll', [EnrollmentController::class, 'store'])->name('enroll.store');

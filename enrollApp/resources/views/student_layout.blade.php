@@ -1,9 +1,9 @@
 @php
-    $student_id = Session::get('student_id');
+$student_id = Session::get('student_id');
 
-    $student_info = DB::table('student_tbl')
-                     ->where('student_id', $student_id)
-                     ->first();
+$student_info = DB::table('student_tbl')
+->where('student_id', $student_id)
+->first();
 @endphp
 
 <!DOCTYPE html>
@@ -76,7 +76,7 @@
                         <input type="text" class="form-control">
                     </div>
                 </form>
-              
+
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -110,14 +110,18 @@
                                 <i class="mdi mdi-gauge menu-icon"></i>
                                 <span class="menu-title">Setting</span>
                             </a>
+                            <a class="nav-link" href="{{ URL::to('/enroll')}}">
+                                <i class="mdi mdi-gauge menu-icon"></i>
+                                <span class="menu-title">Enroll</span>
+                            </a>
                             <a class="nav-link" href="{{ URL::to('/student_logout')}}">
                                 <i class="mdi mdi-gauge menu-icon"></i>
                                 <span class="menu-title">Logout</span>
                             </a>
                         </li>
-                      
-                   
-                   
+
+
+
                         <!--main pages end-->
                         <!-- ui end -->
 
@@ -179,7 +183,7 @@
     <script src="{{asset('/js/dashboard_1.js')}}"></script>
 
     <!-- End custom js for this page-->
-    
+
 
 </body>
 

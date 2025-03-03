@@ -1,13 +1,14 @@
 @extends('student_layout')
 @section('content')
 
+
 <div class="col-sm-6 col-md-3 grid-margin">
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">All Students</h2>
       @php
-        $student=DB::table('student_tbl')
-        ->count('student_id');
+      $student=DB::table('student_tbl')
+      ->count('student_id');
       @endphp
       <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">{{$student}}</p>
     </div>
@@ -21,8 +22,8 @@
     <div class="card-body">
       <h2 class="card-title">All Teachers</h2>
       @php
-        $teachers=DB::table('teachers_tbl')
-        ->count('teachers_id');
+      $teachers=DB::table('teachers_tbl')
+      ->count('teachers_id');
       @endphp
       <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">{{$teachers}}</p>
     </div>
@@ -56,6 +57,10 @@
 </div>
 
 
-
+<p class="alert-success">
+  @if (session('exception'))
+  {{ session('exception') }}
+  @endif
+</p>
 
 @endsection

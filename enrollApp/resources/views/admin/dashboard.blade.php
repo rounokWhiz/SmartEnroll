@@ -35,7 +35,7 @@
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">Tuition Fee</h2>
-      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12</p>
+      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12000</p>
     </div>
     <div class="dashboard-chart-card-container">
       <div id="dashboard-card-chart-3" class="card-float-chart"></div>
@@ -152,56 +152,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 d-flex align-items-stretch">
-                  <div class="card w-100">
-                    <div class="card-body px-3" style="height:333px">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <h2 class="card-title">Invites</h2>
-                        <p class="mb-2 text-muted">This month</p>
-                      </div>
-                      <div class="list py-2 d-flex flex-row align-items-center">
-                        <div class="profile-img mr-4">
-                          <img src="http://via.placeholder.com/47x47" alt="">
-                          <span class="online-status bg-primary"></span>
-                        </div>
-                        <div class="profile-name">Mexwell Peter</div>
-                        <div class="current-progress ml-auto">450/900</div>
-                      </div>
-                      <div class="list py-2 d-flex flex-row align-items-center">
-                        <div class="profile-img mr-4">
-                          <img src="http://via.placeholder.com/47x47" alt="">
-                          <span class="online-status bg-primary"></span>
-                        </div>
-                        <div class="profile-name">Mexwell Peter</div>
-                        <div class="current-progress ml-auto">450/900</div>
-                      </div>
-                      <div class="list py-2 d-flex flex-row align-items-center">
-                        <div class="profile-img mr-4">
-                          <img src="http://via.placeholder.com/47x47" alt="">
-                          <span class="online-status bg-danger"></span>
-                        </div>
-                        <div class="profile-name">Mexwell Peter</div>
-                        <div class="current-progress ml-auto">450/900</div>
-                      </div>
-                      <div class="list py-2 d-flex flex-row align-items-center">
-                        <div class="profile-img mr-4">
-                          <img src="http://via.placeholder.com/47x47" alt="">
-                          <span class="online-status bg-success"></span>
-                        </div>
-                        <div class="profile-name">Mexwell Peter</div>
-                        <div class="current-progress ml-auto">450/900</div>
-                      </div>
-                      <div class="list py-2 d-flex flex-row align-items-center">
-                        <div class="profile-img mr-4">
-                          <img src="http://via.placeholder.com/47x47" alt="">
-                          <span class="online-status bg-warning"></span>
-                        </div>
-                        <div class="profile-name">Mexwell Peter</div>
-                        <div class="current-progress ml-auto">450/900</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
               </div>
             </div>
             <div class="col-md-4 grid-margin d-flex align-items-stretch">
