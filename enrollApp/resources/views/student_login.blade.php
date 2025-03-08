@@ -63,6 +63,9 @@
                 </div>
                 <small class="text-center d-block">Don't have an Account?<a href="#"> Sign Up</a></small>
               </form>
+               <!-- Add Admin Login Button -->
+               <div class="text-center mt-3">
+                <a href="{{ url('/backend') }}" class="enter-btn">Admin Login</a>
             </div>
           </div>
         </div>

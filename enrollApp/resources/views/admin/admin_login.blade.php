@@ -63,6 +63,9 @@
                 </div>
                 <small class="text-center d-block">Don't have an Account?<a href="#"> Sign Up</a></small>
               </form>
+              <div class="text-center mt-3">
+                <a href="{{ url('/') }}" class="  enter-btn">Student Login</a>
+              </div>
             </div>
           </div>
         </div>
