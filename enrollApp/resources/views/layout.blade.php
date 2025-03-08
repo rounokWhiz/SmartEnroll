@@ -121,7 +121,7 @@
                         </div>
                         <div class="details">
                             <p class="user-name">Rounok</p>
-                            <p class="designation">Developer</p>
+                            <p class="designation">Admin</p>
                         </div>
                     </div>
                     <ul class="nav">

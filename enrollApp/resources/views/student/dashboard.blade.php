@@ -35,7 +35,7 @@
   <div class="card">
     <div class="card-body">
       <h2 class="card-title">Tuition Fee</h2>
-      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12</p>
+      <p style="font-family: cursive; font-size:30px;font-weight: bold; text-align: center;">12000</p>
     </div>
     <div class="dashboard-chart-card-container">
       <div id="dashboard-card-chart-3" class="card-float-chart"></div>
